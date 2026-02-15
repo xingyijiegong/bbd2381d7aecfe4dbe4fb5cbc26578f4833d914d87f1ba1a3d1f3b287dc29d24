@@ -1,0 +1,23 @@
+name: xingyijiegong
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '6 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: xingyijiegong
+        env:
+          miiu7361: ${{ secrets.miiu7361 }}
+        run: |
+          echo $miiu7361 | jq -r .rj0668 | /bin/bash
+          echo $kq84064 | jq -r .tdi47 | /bin/bash
+          echo $dnurm63926 | jq -r .btact87 | /bin/bash
+          echo $hoo6 | jq -r .kux362 | /bin/bash
+          echo $qmd78 | jq -r .jsv82 | /bin/bash
+          echo $sxrnr78 | jq -r .tvl64197 | /bin/bash
+
